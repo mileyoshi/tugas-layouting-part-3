@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            overflow: hidden;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            width: calc(33.333% - 20px); /* Three columns */
+            margin: 10px;
+            float: left; /* Float for responsive layout */
+            box-sizing: border-box; /* Ensure padding and margin are included in width */
+            text-align: center;
+        }
+
+        .content img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border-radius: 10px; /* Add some styling to images */
+        }
+
+        .content h4 {
+            margin-top: 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 800px) {
+            .content {
+                width: calc(50% - 20px); /* Two columns */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .content {
+                width: 100%; /* One column */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wisata Bali</h1>
+    <div class="container">
+        <div class="content">
+            <img src="BaliZoo.webp" alt="Bali Zoo Park">
+            <h4>Bali Zoo Park</h4>
+        </div>
+        <div class="content">
+            <img src="MasonElephantPark.jpg" alt="Mason Elephant Park">
+            <h4>Mason Elephant Park</h4>
+        </div>
+        <div class="content">
+            <img src="PantaiKelingking.webp" alt="Pantai Keliling">
+            <h4>Pantai Keliling</h4>
+        </div>
+        <div class="content">
+            <img src="PantaiSeminyak.jpg" alt="Pantai Seminyak">
+            <h4>Pantai Seminyak</h4>
+        </div>
+        <div class="content">
+            <img src="PulauUlunDanu.webp" alt="Pulau Ulun Danu Beratan">
+            <h4>Pulau Ulun Danu Beratan</h4>
+        </div>
+        <div class="content">
+            <img src="TirtaGangga.webp" alt="Tirta Gangga">
+            <h4>Tirta Gangga</h4>
+        </div>
+    </div>
+</body>
+
+</html>
